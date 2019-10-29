@@ -2,9 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Fortune Teller Test</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
   </head>
   <body>
-
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Fortune Teller Test</h1>
+      </div>
+      <form id="teller-test">
+        <div class="form-group">
+          <p>What are some unlucky signs that have happened to you within the past month?</p>
+          <input type="checkbox" name="unlucky" value="1"> A Black Cat crossing your path.<br>
+          <input type="checkbox" name="unlucky" value="1"> Walked under a ladder.<br>
+          <input type="checkbox" name="unlucky" value="1"> Held an event on a Friday the 13th.<br>
+          <input type="checkbox" name="unlucky" value="1"> Tipped over a salt shaker.<br>
+          <input type="checkbox" name="unlucky" value="1"> Broke a mirror.<br>
+          <input type="checkbox" name="unlucky" value="1"> Another unlucky sign not listed.<br>
+        </div>
+        <div class="form-group">
+          <p>What are some lucky signs that have happened to you within the past month?</p>
+          <input type="checkbox" name="lucky" value="1"> Made a Dream catcher.<br>
+          <input type="checkbox" name="lucky" value="1"> Had a ladybug climb up your arm.<br>
+          <input type="checkbox" name="lucky" value="1"> Found a four leaf clover.<br>
+          <input type="checkbox" name="lucky" value="1"> Given a rabbits foot.<br>
+          <input type="checkbox" name="lucky" value="1"> Saw a rainbow after a long hard day.<br>
+          <input type="checkbox" name="lucky" value="1"> Another lucky sign not listed.<br>
+        </div>
+        <button type="submit" class="btn btn-primary">What's Your Fortune!</button>
+      </form>
+    </div>
   </body>
 </html>
