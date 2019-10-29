@@ -4,6 +4,8 @@
 $(document).ready(function() {
   $("form#teller-test").submit(function(e) {
     e.preventDefault();
+
+    $("#teller-show").show();
     
   });
 });
