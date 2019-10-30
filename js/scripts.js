@@ -18,13 +18,13 @@ $(document).ready(function() {
     var luckyVote = 0;
     $("#teller-show").show();
     $("input:checkbox[name=unlucky]:checked").each(function() {
-      var unluckyVote = parseInt($(this).val());
+      unluckyVote++;
     });
     $("input:checkbox[name=lucky]:checked").each(function() {
-      var luckyVote = parseInt($(this).val());
+      luckyVote++;
     });
     var result = tellerResult(unluckyVote, luckyVote);
-    console.log(result);
+
     $("#teller-show").append(result);
     $("#teller-test").hide();
   });
